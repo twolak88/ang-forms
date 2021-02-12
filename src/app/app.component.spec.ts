@@ -16,11 +16,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ang-forms'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('ang-forms');
-  });
+  // it(`should have as title 'ang-forms'`, () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const app = fixture.componentInstance;
+  //   expect(app.title).toEqual('ang-forms');
+  // });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
