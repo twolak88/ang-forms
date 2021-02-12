@@ -35,7 +35,7 @@
           <select
           id="secret"
           class="form-control"
-          ngModel
+          [ngModel]="defaultQuestion"
           name="secret"
           required
           #secret="ngModel">
