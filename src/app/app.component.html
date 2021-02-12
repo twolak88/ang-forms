@@ -44,6 +44,18 @@
           </select>
           <span class="help-block" *ngIf="!secret.valid && secret.touched">Please enter valid question!</span>
         </div>
+        <div class="form-group" [ngClass]="{'has-error': !answerEl.valid && answerEl.touched}">
+          <textarea
+            class="form-control"
+            name="questionAnswer"
+            rows="3"
+            required
+            #answerEl="ngModel"
+            [(ngModel)]="answer">
+          </textarea>
+          <span class="help-block" *ngIf="!answerEl.valid && answerEl.touched">Please enter valid answer!</span>
+        </div>
+        <p>Your reply: {{ answer }}</p>
         <button
           class="btn btn-primary"
           type="submit"
